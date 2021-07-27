@@ -19,5 +19,6 @@ const options = {
   ],
   database: process.env.DB_CONNECTION,
 };
+
 export default (req: NextApiRequest, res: NextApiResponse) =>
   NextAuth(req, res, options);
